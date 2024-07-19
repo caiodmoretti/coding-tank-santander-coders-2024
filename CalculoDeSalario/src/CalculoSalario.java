@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class CalculoSalario {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -47,7 +46,7 @@ public class CalculoSalario {
         if(salario>=1903.99 && salario<=2826.65){
             return salario * 0.075;
         }
-        if(salario>=2826.26 && salario<=3751.05){
+        if(salario>=2826.66 && salario<=3751.05){
             return salario * 0.15;
         }
         if (salario>=3751.06 && salario<=4664.68){
@@ -58,7 +57,7 @@ public class CalculoSalario {
 
     }
     public static double calcularSalarioLiquido(double salario, double descontos){
-        return salario-descontos;
+        return salario - descontos;
     }
 
     public static void imprimirInformaco(double salario){
